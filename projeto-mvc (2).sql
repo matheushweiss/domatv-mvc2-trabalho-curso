@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Out-2021 às 02:44
+-- Tempo de geração: 29-Out-2021 às 23:22
 -- Versão do servidor: 10.4.18-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -30,17 +30,22 @@ SET time_zone = "+00:00";
 CREATE TABLE `pessoas` (
   `id` int(11) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `email` varchar(50) DEFAULT NULL,
+  `email` varchar(20) NOT NULL,
   `datanascimento` date NOT NULL,
-  `telefone` varchar(20) NOT NULL
+  `telefone` varchar(20) NOT NULL,
+  `rank` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `pessoas`
 --
 
-INSERT INTO `pessoas` (`id`, `nome`, `email`, `datanascimento`, `telefone`) VALUES
-(24, 'matheuse', 'matheushenri@henriq.com', '2021-10-15', '5594008922');
+INSERT INTO `pessoas` (`id`, `nome`, `email`, `datanascimento`, `telefone`, `rank`) VALUES
+(1, 'mat', 'mat@gmail.com', '2021-10-12', 'Mario', '14'),
+(2, 'julio', 'agosto.setembro@gmai', '2021-10-13', 'minecraft', '157'),
+(3, 'mat', 'mat@mat.com', '2021-10-21', 'sally face', '1'),
+(4, 'mat', 'mat@mat.com.yahoo', '2021-10-21', 'sallyface', '2'),
+(6, 'lisyhermann', 'lisy@hermann.com', '2021-10-05', 'candy crush', '140');
 
 --
 -- Índices para tabelas despejadas
@@ -60,7 +65,7 @@ ALTER TABLE `pessoas`
 -- AUTO_INCREMENT de tabela `pessoas`
 --
 ALTER TABLE `pessoas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
