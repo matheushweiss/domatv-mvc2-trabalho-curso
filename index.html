@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>doma.tv</title>
+  </head>
+  <body>
+    <header>
+      <img class="doma-logo" src="img/doma.png" alt="" />
+
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="register.php">Faça seu cadastro</a></li>
+
+          <li><a href="lista.php">Procure seus amigos</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <h1 class="titulo-index">
+          Faça parte da maior comunidade de games do Brasil !
+        </h1>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://compass-ssl.xbox.com/assets/84/28/8428c630-0a52-42c3-8521-181ab70f1ccb.jpg?n=299441_GLP-Page-Hero-1084_1920x1080.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://www.pixel4k.com/wp-content/uploads/2018/12/far-cry-new-dawn-4k_1544287230.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://i.pinimg.com/originals/15/70/cd/1570cd9bfb42306b7ddc6203f3a486f2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://www.wasd.pt/wp-content/uploads/Franklin-Chop-GTA-V-Wallpaper-HD.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://a-static.besthdwallpaper.com/call-of-duty-black-ops-3-bateria-papel-de-parede-1280x720-11575_45.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <h1 class="titulo2-index">Seja nosso parceiro!</h1>
+
+        <h3 class="sobre-parceria">
+          Adquirindo parceira com o Doma você ganha milhares de benefícios em
+          suas streams + brindes oficiais do site e de jogos! Participe!
+        </h3>
+      </div>
+    </main>
+
+    <footer>
+      <h3>
+        O mundo dos games é um lugar incrivel, basta conhecer as pessoas certas!
+        Aqui no Doma você consegue fazer amigos, assistir a videos, ver notícias
+        e fazer streams. Seja você, seja DOMA!
+        <a href="register.php">Venha fazer parte do DOMA!</a>
+      </h3>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
+    </script>
+  </body>
+</html>

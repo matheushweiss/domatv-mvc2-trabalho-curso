@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+
+body {
+  background: rgb(24,24,24);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: white;
+  height: 150px;
+}
+
+.doma-logo{
+  padding: 20px;
+  display: flex;
+  width: 500px;
+}
+.menu ul{
+ display: flex;
+ position: absolute;
+ top: 60px;
+ left: 1000px
+
+}
+
+.menu a{
+  font-family: 'Poppins', sans-serif;
+  padding: 0px 30px 0px 0px;
+  text-decoration: none;
+  color: rgb(24, 24, 24);
+  font-size: 20px;
+}
+
+.menu a:hover{
+ transition: 0.5s;
+  color: rgb(0, 81, 231);
+ 
+}
+
+h2{
+  padding: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+
+
+
+
+/* table */
+
+table {
+  text-align: center;
+ 
+}
+
+body table tr td, body table tr th {
+  
+ 
+  padding: 20px;
+  
+  
+}
+
+table button {
+  margin-bottom: 10px;
+}
+
+table button {
+  font-family: 'Poppins', sans-serif;
+  width: 64px;
+  height: 40px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  transition: .3s ease;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+table button a {
+
+  text-decoration: none;
+}
+
+.delete{
+  color: rgb(24, 24, 24);
+}
+
+.delete:hover{
+  transform: scale(1.3);
+  color: rgb(255, 0, 0);
+}
+
+.update{
+  color: rgb(255, 255, 255);
+}
+
+.update:hover{
+  transform: scale(1.3);
+  color: rgb(0, 81, 231);
+}
+
+td, th, tr{
+ 
+  padding: 300px;
+  color: white;
+}
+td{
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(24, 24, 24);
+}
+
+th{
+
+  background-color: rgb(0, 81, 231);
+}
+
